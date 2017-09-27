@@ -619,6 +619,59 @@
 /** Main Body **/
 
   body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     background-color: $bg-color;
     color: $text-color;
+  }
+
+  .bg-body, .season {
+    background-image: url("../images/bg-dark.png");
+    text-align: center;
+  }
+
+  .container {
+    background-color: $bg-color;
+  }
+
+  .inner {
+    background-color: $bg-color;
+    margin: 10px;
+  }
+
+  .row-profiles {
+    margin: 10px;
+  }
+
+  img { width:100%; }
+
+  .section-nav {
+    background-color: $text-color;
+    color: $bg-color;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+
+  ul li {
+    display: inline;
+  }
+
+  ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    border-bottom: 1px solid $bg-color;
+  }
+
+  #season-one {
+    margin-top: 80px;
+  }
+
+  a {
+    color: $bg-color !important;
+    &:hover {text-decoration: underline;}
+    padding: 5px;
   }

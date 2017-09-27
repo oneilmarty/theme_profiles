@@ -414,7 +414,7 @@ nav.navbar li {
     font-size: 16px;
     padding: 26px 8px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
     text-transform: uppercase; }
   nav.navbar li a:hover, nav.navbar li.section a, nav.navbar li.current a {
     color: rgba(0, 0, 0, 0.5); }
@@ -424,7 +424,7 @@ nav.navbar li {
   nav.navbar li .child {
     left: -24px;
     background: #fff;
-    border: 2px solid #ffffff;
+    border: 2px solid #000000;
     border-top: none;
     padding-bottom: 30px; }
     nav.navbar li .child li {
@@ -433,7 +433,7 @@ nav.navbar li {
       nav.navbar li .child li a, nav.navbar li .child li a:visited {
         font-size: 12px;
         padding: 10px 30px;
-        color: #ffffff; }
+        color: #000000; }
       nav.navbar li .child li a:hover {
         color: rgba(0, 0, 0, 0.5); }
 
@@ -585,14 +585,14 @@ ul.child {
   cursor: default;
   margin-bottom: 40px;
   margin-top: 30px;
-  color: #ffffff; }
+  color: #000000; }
   .apple_pagination a, .apple_pagination span {
     padding: 8px 12px;
     margin: 0px 5px;
     font-size: 14px;
     line-height: 14px; }
   .apple_pagination .disabled {
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     cursor: not-allowed;
     font-size: 14px;
@@ -601,7 +601,7 @@ ul.child {
     padding: 8px 12px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
+    color: #000000;
     border-radius: 5px;
     cursor: not-allowed;
     margin: 0px 5px;
@@ -609,14 +609,14 @@ ul.child {
     line-height: 14px; }
   .apple_pagination a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     margin: 0px 5px;
     font-size: 14px;
     line-height: 14px; }
   .apple_pagination a:hover, .apple_pagination a:focus {
     color: rgba(0, 0, 0, 0.5);
-    background: #ffffff;
+    background: #000000;
     border-radius: 5px;
     font-size: 14px;
     line-height: 14px; }
@@ -671,7 +671,7 @@ a.em-share.ShareIcon {
   background-position: -92px 0px; }
 
 .KitchenBorder {
-  border-bottom: 3px dotted #ffffff;
+  border-bottom: 3px dotted #000000;
   margin-bottom: 20px;
   padding-bottom: 20px; }
 
@@ -720,5 +720,51 @@ a.em-share.ShareIcon {
 /**********************/
 /** Main Body **/
 body {
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #ffffff;
+  color: #000000; }
+
+.bg-body, .season {
+  background-image: url("../images/bg-dark.png");
+  text-align: center; }
+
+.container {
+  background-color: #ffffff; }
+
+.inner {
+  background-color: #ffffff;
+  margin: 10px; }
+
+.row-profiles {
+  margin: 10px; }
+
+img {
+  width: 100%; }
+
+.section-nav {
   background-color: #000000;
-  color: #ffffff; }
+  color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+
+ul li {
+  display: inline; }
+
+ul {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
+  border-bottom: 1px solid #ffffff; }
+
+#season-one {
+  margin-top: 80px; }
+
+a {
+  color: #ffffff !important;
+  padding: 5px; }
+  a:hover {
+    text-decoration: underline; }
