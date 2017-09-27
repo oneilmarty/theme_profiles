@@ -1,0 +1,19 @@
+{
+  "name": "core-gulp",
+  "description": "package json for installing node/gulp modules",
+  "author": "Jason Korth",
+  "dependencies": {
+    "gulp-sass": "*",
+    "gulp-jshint": "*",
+    "gulp-livereload": "*",
+    "handlebars": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-sourcemaps": "*",
+    "sassdoc": "*"
+  },
+  "devDependencies": {
+    "gulp-sass": "^3.1.0",
+    "gulp-jshint": "^2.0.4",
+    "jshint": "^2.9.4"
+  }
+}

@@ -1,0 +1,203 @@
+@import "variables";
+
+/* #Typography
+================================================== */
+	body {
+		background: $bg-color;
+		font-size: 16px;
+		line-height: 1.428571429;
+		color: $text-color;
+		-webkit-text-size-adjust: 100%;
+		font-family: $font-fam;
+	}
+
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		color: $text-color;
+		font-family: $font-fam;
+		font-weight: normal;
+		line-height: 1.1;
+
+		a {font-weight: inherit;}
+	}
+	h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+		font-weight: normal;
+		line-height: 1;
+	}
+
+	h1, .h1, h2, .h2, h3, .h3 {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
+		font-size: 65%;
+	}
+	h4, .h4, h5, .h5, h6, .h6 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small, .h4 .small, h5 .small, .h5 .small, h6 .small, .h6 .small {
+		font-size: 75%;
+	}
+	h1, .h1 { font-size: 50px;
+		&.title {text-transform: uppercase; margin-top: 50px; font-weight: 600;}
+	}
+	h2, .h2 { font-size: 40px; }
+	h3, .h3 { font-size: 32px; }
+	h4, .h4 { font-size: 25px; }
+	h5, .h5 { font-size: 20px; }
+	h6, .h6 { font-size: 16px; }
+	p { margin: 0 0 20px 0; }
+
+
+	p { margin: 0 0 20px 0;
+		img { margin: 0; }
+		&.lead { font-size: 25px;}
+		a, a:visited { line-height: inherit; }
+	 }
+	.lead {
+		margin-bottom: 20px;
+		font-size: 25px;
+		line-height: 1.04;
+	}
+
+	em, i { font-style: italic; }
+	strong, .strong, b { font-weight: bold; }
+	small, .small { font-size: 85%; }
+
+	mark, .mark { padding: .2em; background-color: #fcf8e3;}
+
+
+
+	/*	Blockquotes  */
+	blockquote { padding: 10px 20px; margin: 0 0 20px; font-size: 17.5px; border-left: 5px solid #eee; }
+	blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child { margin-bottom: 0; }
+	blockquote footer, blockquote small, blockquote .small { display: block; font-size: 80%; line-height: 1.42857143; color: #777; }
+	blockquote footer:before, blockquote small:before, blockquote .small:before { content: '\2014 \00A0';}
+	.blockquote-reverse, blockquote.pull-right { padding-right: 15px; padding-left: 0; text-align: right; border-right: 5px solid #eee; border-left: 0;}
+	.blockquote-reverse footer:before, blockquote.pull-right footer:before, .blockquote-reverse small:before, blockquote.pull-right small:before, .blockquote-reverse .small:before, blockquote.pull-right .small:before { content: ''; }
+	.blockquote-reverse footer:after, blockquote.pull-right footer:after, .blockquote-reverse small:after, blockquote.pull-right small:after, .blockquote-reverse .small:after, blockquote.pull-right .small:after { content: '\00A0 \2014'; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 10px; height: 0; }
+
+
+
+/* #Links
+================================================== */
+	a, a:visited { color: $link; text-decoration: none; outline: 0; }
+	a:hover, a:focus { color: $hover; }
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 20px; padding: 0px;}
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 1; }
+	ul.large li { line-height: 1; }
+	li p { line-height: 1; }
+	.typography ul {list-style-type: disc; margin-left: 40px; list-style-position: outside;}
+	.typography ol {list-style-type: decimal; margin-left: 20px;}
+
+
+/* LINK ICONS - shows type of file
+================================================== */
+.typography a[href$=".pdf"],
+.typography a[href$=".PDF"],
+.typography a.pdf {
+	padding: 2px;
+	padding-left: 20px;
+	background: url(/dynamic-core/images/icons/page_white_acrobat.png) no-repeat left center;
+}
+.typography a[href$=".doc"],
+.typography a[href$=".docx"],
+.typography a[href$=".DOC"],
+.typography a[href$=".DOCX"],
+.typography a.doc {
+	padding: 2px;
+	padding-left: 20px;
+	background: url(/dynamic-core/images/icons/page_word.png) no-repeat left center;
+}
+.typography a[href$=".xls"],
+.typography a[href$=".xlsx"],
+.typography a[href$=".XLS"],
+.typography a[href$=".XLSX"],
+.typography a.xls {
+	padding: 2px;
+	padding-left: 20px;
+	background: url(/dynamic-core/images/icons/page_excel.png) no-repeat left center;
+}
+.typography a[href$=".gz"],
+.typography a[href$=".GZ"],
+.typography a[href$=".gzip"],
+.typography a[href$=".GZIP"],
+.typography a[href$=".zip"],
+.typography a[href$=".ZIP"],
+.typography a.archive {
+	padding: 2px;
+	padding-left: 20px;
+	background: url(/dynamic-core/images/icons/page_white_zip.png) no-repeat left center;
+}
+.typography a[href$=".exe"],
+.typography a[href$=".EXE"],
+.typography a.application {
+	padding: 2px;
+	padding-left: 20px;
+	background: url(/dynamic-core/images/icons/application.png) no-repeat left center;
+}
+
+
+/* WYSIWYG EDITOR ALIGNMENT CLASSES
+-------------------------------------------- */
+.typography .left, .text-left { text-align: left}
+.typography .center, .text-center {text-align: center}
+.typography .right, .text-right {text-align: right}
+.typography .justify, .text-justify {text-align: justify;}
+.text-nowrap {white-space: nowrap;}
+.text-lowercase {text-transform: lowercase;}
+.text-uppercase {text-transform: uppercase;}
+.text-capitalize {text-transform: capitalize;}
+
+
+/* IMAGES
+-------------------------------------------- */
+.typography img.left {
+    float: left;
+    max-width: 50%;
+    height: auto;
+    margin: 5px 20px 10px 0;
+}
+.typography img.right {
+    float: right;
+    max-width: 50%; /* Responsive width */
+    height: auto;
+    margin: 5px 0 10px 20px;
+}
+.typography img.leftAlone {
+    float: left;
+    margin-right: 100%;
+    margin-bottom: 10px;
+    clear: both;
+}
+.typography img.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    clear: both;
+}
+.typography {
+	img {max-width: 100%; height: auto;}
+	h3 {font-weight: bold;}
+}
+
+.serif {font-family: "Times New Roman", Georgia, Serif;}
+.sans-serif {font-family: $font-fam;}
