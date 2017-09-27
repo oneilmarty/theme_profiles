@@ -13,7 +13,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #595959;
+  color: #ffffff;
   border: 0;
   border-bottom: 1px solid #e5e5e5; }
 
@@ -52,7 +52,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #595959; }
+  color: #ffffff; }
 
 input.form-control, textarea.form-control, select.form-control {
   display: block;
@@ -80,14 +80,14 @@ input.form-control, textarea.form-control, select.form-control {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
 
 .form-control::-moz-placeholder {
-  color: #595959;
+  color: #ffffff;
   opacity: 1; }
 
 .form-control:-ms-input-placeholder {
-  color: #595959; }
+  color: #ffffff; }
 
 .form-control::-webkit-input-placeholder {
-  color: #595959; }
+  color: #ffffff; }
 
 .form-control[disabled],
 .form-control[readonly],

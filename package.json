@@ -3,7 +3,6 @@
   "description": "package json for installing node/gulp modules",
   "author": "Jason Korth",
   "dependencies": {
-    "gulp-sass": "*",
     "gulp-jshint": "*",
     "gulp-livereload": "*",
     "handlebars": "*",
@@ -12,8 +11,9 @@
     "sassdoc": "*"
   },
   "devDependencies": {
-    "gulp-sass": "^3.1.0",
+    "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.4",
+    "gulp-sass": "^3.1.0",
     "jshint": "^2.9.4"
   }
 }

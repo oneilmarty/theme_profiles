@@ -1,15 +1,15 @@
 /* #Typography
 ================================================== */
 body {
-  background: #ffffff;
+  background: #000000;
   font-size: 16px;
   line-height: 1.428571429;
-  color: #595959;
+  color: #ffffff;
   -webkit-text-size-adjust: 100%;
   font-family: "Josefin Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #595959;
+  color: #ffffff;
   font-family: "Josefin Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.1; }
@@ -128,7 +128,7 @@ hr {
 /* #Links
 ================================================== */
 a, a:visited {
-  color: #595959;
+  color: #ffffff;
   text-decoration: none;
   outline: 0; }
 

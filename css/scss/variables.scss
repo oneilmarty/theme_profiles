@@ -5,14 +5,15 @@
 
 // Reusable Variables
 
-	$color-bg-one: $x-palette-white;
+	$color-bg-one: $x-palette-black;
 
-	$color-text-one: $x-palette-black;
+	$color-text-one: $x-palette-white;
+	$color-text-two: $x-palette-white;
 
 // Important Variables
 
 	$bg-color: $color-bg-one;
-	$text-color: $x-palette-black;
+	$text-color: $color-text-one;
 	$font-fam: 'Josefin Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	$link: $color-text-one;
 	$hover: rgba(black, 0.5);
